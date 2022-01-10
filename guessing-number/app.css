@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #192a56;
+	color: #7f8fa6;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	font-size: 1.2rem;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+#min,
+#max {
+	color: #44bd32;
+	font-weight: bold;
+}
+#tip {
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #dcdde1;
+	text-align: center;
+	color: #dcdde1;
+	max-width: 100%;
+}
+.response {
+	text-align: center;
+}
+
+.restart,
+.btn {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	cursor: pointer;
+	background-color: #4cd137;
+	border: none;
+	padding: 0.3rem 0.6rem;
+	border-radius: 5px;
+	color: #192a56;
+	transition: background-color 0.25s;
+}
+.btn:hover,
+.btn:active {
+	background-color: #44bd32;
+}
+.true {
+	color: #4cd137;
+}
+.false {
+	color: #c23616;
+}
+.restart {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 2rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+::placeholder {
+	color: #7f8fa6c7;
+}
+
+.fadeIn {
+	opacity: 0;
+	animation: fadeIn 0.2s ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
